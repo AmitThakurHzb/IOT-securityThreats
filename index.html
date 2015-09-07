@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>IOT security Threats</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/white.css" id="theme">
+		<style type="text/css" media="screen">
+			.slides section.has-dark-background,
+			.slides section.has-dark-background h3 {
+				color: #fff;
+			}
+			.slides section.has-light-background,
+			.slides section.has-light-background h3 {
+				color: #222;
+			}
+			section p{
+				font-size: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h3>Security Threats </h3>
+					<img src="img/IoT_logo.jpg" />
+				</section>
+
+				<section>
+					<h3>IOT world security issues can be categorized as :</h3>
+					<ul>
+						<li><b>Physical security :</b>includes  sensor interference,  signal intercepted .</li>
+						<li><b>Operation security:</b>it exists in the various elements, related to the normal operation of the sensor, transmission systems and treatment systems.</li>
+						<li><b>Data security/ Information security :</b>includes transmission system and the processing system will not be stolen, tampered, forged repudiation. </li>
+					</ul>
+				</section>
+
+				<section data-transition="zoom">
+					<h4>Information security in IoT other hidden dangers.</h4>
+					<ul>
+						<li>RFID tag information security </li>
+						<li>wireless communications information security</li>
+						<li>network transmission of information security </li>
+						<li>privacy information security </li>
+						<li>information processing security </li>
+					</ul>
+					
+				</section>
+
+				<section data-transition="convex">
+				<h4>RFID identification Issues</h4>
+					<p>In RFID identification When labels receive the commands and data information from the receiving reader, may result in the error results: (1) Label error in response to reader commands; (2) Confuse the label working condition; (3) Label write error and go to sleep. </p>
+					<p>the attacker can block the communication link via interference signal, making the reader overload and cannot receive the normal tag data, manufacturing denial of service.</p>
+					
+				</section>
+				
+				
+				<section data-transition="convex">
+					<h3>Network Transmission of Information Security.</h3>
+					<ul>
+						<li>Intruder can attack IOT through virtual nodes, inserting false routing information</li>
+						<li>
+							flooding techniques allows, resulting in a lot of duplication of information and consume large amounts of energy.	
+						</li>
+						
+					</ul>
+					
+				</section>
+				<section data-transition="convex">
+					<h3>Privacy Protection</h3>
+					<ul>
+						<li>Data Privacy Protection should be handled</li>
+						<li>Location Privacy Protection : the position privacy protection mechanism becomes the urgent needs of wireless sensor networks, handled properly<p>
+						</li>
+						<li>Identity Privacy Protection</li>
+						
+					</ul>
+					
+				</section>
+				<section>
+					Most of security concerns fly around effective way of data communication via diff available protocols which can fall under, S2S,D2D,D2S.
+					<img src="img/protocol.PNG" />
+					
+				</section>
+
+				<section data-transition="convex">
+					<ul>
+						<li><b>MQTT:</b> a protocol for collecting device data and communicating it to servers (D2S)</li>
+						<li><b>DDS:</b>a fast bus for integrating intelligent machines (D2D)</li>
+						<li><b>AMQP:</b>a queuing system designed to connect servers to each other (S2S)</li>	
+					</ul>
+				</section>
+
+				<section data-transition="convex-in">
+					<h3>Would you agree that HTTP/2 with HPACK would certainly rule out any reason for using MQTT?</h3>
+				</section>
+
+				
+					<section data-transition="concave">
+						HTTP/2 supports multiplexing of requests. This means that a single HTTP connection can be reused by the server to send many requests and responses. Even better, a single request can receive multiple responses – so the server can effectively push more messages to the client than they requested.
+					</section>
+					<section data-transition="concave">
+						<ul>
+						<li>Streams are a new concept in HTTP/2,server can send a PUSH_PROMISE message then immediately open a new stream to send the additional item without the client having to request it</li>
+						<li>streams make secure transmission over convention server push used by MQTT. </li>
+						<li>HPACK is part of HTTP/2 for header compression, makes header data secure</li>
+						
+					</ul>
+					
+						
+					</section>
+					<section data-transition="convex">
+						<h3>Deuterium is a lightweight implementation of HTTP/2 ideally suited for the Internet of Things</h3>
+						<li>Supports IPv4 and/or IPv6, TLS via embed TLS or OpenSSL</li>
+					</section>
+					
+				
+
+				<section data-transition="none">
+					<h3>Conclusion</h3>
+					Using HTTP2 protocol with managing external threat can be helpful to overcome from information security threats of IOT.
+				</section>
+
+				<section>
+					<h3>HACK-ME Challenge-5</h3>
+					Amit Thakur.
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				center: true,
+				history: true,
+
+				// transition: 'slide',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'slide'
+			});
+
+		</script>
+
+	</body>
+</html>
